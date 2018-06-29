@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FypApp"
+             x:Class="FypApp.MainPage">
+             
+    <ContentPage.Content>
+        <Grid BackgroundColor="#5E9641">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="80"/>
+            </Grid.RowDefinitions>
+            <Label Text="Insert Image HERE" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+            
+            <Grid Grid.Row="1" Margin="20,0,20,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Entry Grid.Row="1" x:Name="username" Placeholder="Username" PlaceholderColor="White"></Entry>
+                <Entry IsPassword="True" Grid.Row="2" x:Name="password" Placeholder="Password" PlaceholderColor="White"></Entry>
+                <Button Grid.Row="3" Text="Log In" BackgroundColor="#94C83D" Clicked="Login_Click"></Button>
+                <Button Grid.Row="4" Text="Sign Up" BackgroundColor="#94C83D"></Button>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>

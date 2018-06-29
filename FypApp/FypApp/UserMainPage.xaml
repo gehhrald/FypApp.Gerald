@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FypApp.UserMainPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Aspect="AspectFill" Source="http://d.ibtimes.co.uk/en/full/1611491/cristiano-ronaldo.jpg"/>
+            <BoxView HeightRequest="1" BackgroundColor="#ffffff"/>
+            <StackLayout Padding="15">
+
+                <Label Text="Cristiano Ronaldo" FontAttributes="Bold" TextColor="White"/>
+                <Label Text="My comments were misinterpreted after the game. I wasn't saying that I'm better than everyone else. I was referring to injuries. The team have lost a lot of important players through injury like Pepe, Bale, Benzema, Marcelo… That has harmed us and prevented us from reaching our usual level."
+                      TextColor="White" />
+
+            </StackLayout>
+
+            <BoxView HeightRequest="1" BackgroundColor="#ffffff"/>
+
+
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Button Text="NextPage"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
